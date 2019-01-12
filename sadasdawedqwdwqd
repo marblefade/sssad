@@ -1,0 +1,9 @@
+let a = System.IO.File.ReadAllLines "input.txt"
+let gruzik = a.[0] //Сколько лежит груза
+let gruz = int gruzik
+let gruzopodk = a.[1] //Сколько выдерживает верблюд
+let gruzopod = int gruzopodk
+let needw = (gruzopod - gruz) + 1
+
+let soloma = a.[3].Split ' '|> Array.map int |>Array.filter (fun x -> needw >= x // Вырезаем лишние
+let solomak = 
